@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(65, 65, 65);
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(92, 92, 92);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.247);
+        }
+
+        nav {
+            background-color: rgba(212, 211, 211, 0.863);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.267);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgba(39, 39, 39, 0.514);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color:rgb(27, 27, 27);
+
+        }
+
+        main {
+            background-color:  rgb(92, 92, 92);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 4px 1x rgba(0, 0, 0, 0.815)
+        }
+
+        article {
+            background-color: rgba(39, 39, 39, 0.74);
+            padding: 5px;
+            }
+
+        article > aside {
+            background-color: rgb(85, 82, 82);
+        }
+
+        footer {
+            background-color: rgb(22, 22, 22);
+            color: rgba(236, 226, 226, 0.466);
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        section > p {
+            background-color: rgba(32, 32, 32, 0.74);
+            color: rgba(147, 148, 148, 0.781);
+            padding: 10px;
+        }
+        
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://twitter.com/aksdjkshjak" target="_blank" rel="external">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Caos Batalha Estilo</p>
+        </section>
+            <section id="notícias">
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis in alias amet omnis sequi excepturi id eos praesentium obcaecati vel. Dolor quibusdam accusantium maxime unde similique odio deleniti dolore? Neque.</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+            </section>
+     </main>
+     <footer>
+            <p>Desenvoldido pelo Diegão</p>
+     </footer>
+</body>
+</html>
