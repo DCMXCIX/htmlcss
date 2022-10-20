@@ -144,13 +144,6 @@ abbr {
     text-decoration: none;
 }
 
-footer {
-    color: rgba(255, 255, 255, 0.877);
-    background-color: rgba(9, 83, 40, 0.877);
-    padding: 5px;
-    font-size: 0.8em;
-    text-align: center;
-}
 
 aside {
     background-color: rgba(30, 192, 79, 0.411);
@@ -172,4 +165,21 @@ aside > ul {
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.877);
+    background-color: rgba(9, 83, 40, 0.877);
+    padding: 7px;
+    text-align: center;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > a:hover {
+    text-decoration: underline;
 }
