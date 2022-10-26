@@ -13,12 +13,33 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+
+        caption {
+            background-color: rgb(43, 43, 43);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
         }
 
         thead, tfoot {
-            background-color: rgb(26, 26, 26);
+            background-color: rgb(24, 24, 24);
             color: white;
         }
+
+        thead > tr > th {
+            background-color: rgb(24, 24, 24);
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
 
         td, th {
             border: 1px solid black;
@@ -28,6 +49,10 @@
         .num {
             text-align: right;
         }
+
+        h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -35,19 +60,20 @@
     <!--
          ANATOMIA DE TABELAS GRANDES
          TABLE
+              CAPTION  
               THEAD
                    TR, TD, TH 
               TBODY
                    TR, TD, TH
               TFOOT
                    TR, TD, TH   --> 
-
-    <h2>Lista de unidades federativas do Brasil por população (2021)</h2>                
+               
     <table>
+        <caption>Lista de unidades federativas do Brasil por população (2021)</caption>
         <thead>
             <tr> 
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,7 +188,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>213.317.639</strong></td>    
             </tr>
         </tfoot>
