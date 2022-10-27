@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        a {
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.432);
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus sit nesciunt facere velit, omnis, ea minus eveniet vitae id sint ducimus ipsa excepturi neque aspernatur deleniti, tenetur praesentium commodi.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quae pariatur quibusdam sint est nobis eligendi fugiat voluptatem facilis corporis, tempora fugit labore omnis temporibus tenetur recusandae rerum. Dolor, accusantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, labore omnis, optio adipisci repellat, dolores maiores iusto cupiditate ipsam ullam soluta repudiandae! Distinctio magni quaerat eligendi sit accusamus perferendis cupiditate.</p>
+
+    <iframe id="tela" name="frame" src="">
+        Infelizmente seu navegador não é compatível com isso.
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at, rem numquam fugit, molestias placeat ratione nisi, doloremque ab earum nam tempora labore cumque quas maiores iste sed atque provident! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum soluta repellat dignissimos architecto natus ea dolores enim aperiam esse veritatis harum voluptatum dolor iusto facere commodi ipsa, quisquam est. Exercitationem!</p>
+</body>
+</html>
